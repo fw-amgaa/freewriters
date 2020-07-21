@@ -7,7 +7,7 @@
         
         <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Klamp - Multipurpose HTML5 Template</title>
+        <title> Writers | Home </title>
 
         <!-- Icon css link -->
         <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -71,6 +71,12 @@
             }
             .main_header_area.affix .pull-left .h_contact_bar:before{
                 background: black;
+            }
+            .main_header_area.business_menu.transparent_menu .navbar-default .nav.navbar-nav > li > a {
+                color: #fff;
+            }
+            .main_header_area.business_menu.transparent_menu.affix .navbar-default .nav.navbar-nav > li > a {
+                color: black;
             }
         </style>
         <x-header/>

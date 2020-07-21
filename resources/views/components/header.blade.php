@@ -1,7 +1,6 @@
 <div>
-    <!-- Happiness is not something readymade. It comes from your own actions. - Dalai Lama -->
-    <!-- Preloader-->
-    <div class="loader-container">
+        <!-- Preloader-->
+        <div class="loader-container">
 			<div class="loader">
 				<div id="mask">
                     <svg class="preloader-icon" width="34" height="38" viewbox="0 0 34 38">
@@ -11,9 +10,9 @@
 			</div>
 		</div>
         <!-- End Preloader-->
-
-        <!--================Search Header Area =================-->
-        <div class="container-fluid searchForm">
+       
+       <!--================Search Header Area =================-->
+       <div class="container-fluid searchForm">
             <form action="#" class="row">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="ti-search"></i></span>
@@ -22,49 +21,81 @@
                 </div>
             </form>
         </div>
-        <!--================End Search Header Area =================-->
-        <!--================Offcanvas Menu Area =================-->
-        <div class="offcanvas_menu">
+       <!--================End Search Header Area =================-->
+       
+       <!--================Offcanvas Menu Area =================-->
+        <div class="offcanvas_menu right_direction">
             <div class="closer_icon">
                 <i class="ti-close"></i>
             </div>
             <div class="menu_title">
-                <h2>Welcome to Writers.mn </h2>
-                <p>Чиний дуртай авга ах энд байршилна</p>
+                <h2> Welcome to Writers </h2>
+                <p>Чиний дургүй авга ах</p>
             </div>
             <div class="off_menu">
                 <ul class="nav">
-                    <li>
-                        <a href="/">Home</a>
+                    <li class="submenu active">
+                        <a href="#">Home</a>
+                        <ul>
+                            <li><a href="agency-slider.html">agency slider</a></li>
+                            <li><a href="corporate-slider.html">corporate slider</a></li>
+                            <li><a href="company-corporate.html">company corporate</a></li>
+                            <li><a href="creative-multipurpose.html">Creative Multipurpose</a></li>
+                            <li><a href="creative-corporate.html">Creative corporate</a></li>
+                            <li class="active"><a href="business.html">Business</a></li>
+                            <li><a href="creative-business.html">Creative Business</a></li>
+                            <li><a href="agency-fullpage.html">agency fullpage</a></li>
+                            <li><a href="agency-split-content.html">agency split content</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="/about-us">About</a>
-                    </li>
+                    <li><a href="about-us.html">about</a></li>
                     <li class="submenu">
                         <a href="#">portfolio</a>
                         <ul>
-                            <li><a href="/portfolio">Portfolio Landing</a></li>
-                            <li><a href="/portfolio-single">Single Portfolio</a></li>
+                            <li><a href="portfolio-1.html">Portfolio 01</a></li>
+                            <li><a href="portfolio_gallery.html">Portfolio Gallery</a></li>
+                            <li><a href="portfolio_gallery_space.html">Portfolio Gallery Space</a></li>
+                            <li><a href="portfolio_metro.html">Portfolio Metro</a></li>
+                            <li><a href="portfolio_metro_space.html">Portfolio Metro Space</a></li>
+                            <li><a href="portfolio_masonry.html">Portfolio Masonry</a></li>
+                            <li><a href="portfolio_carousel.html">Portfolio Carousel</a></li>
+                            <li><a href="photography_carousel.html">Photography Carousel</a></li>
+                            <li><a href="photography_slider.html">Photography Slider</a></li>
+                            <li><a href="photographer_portfolio.html">Photographer Portfolio</a></li>
+                            <li><a href="photographer_portfolio_space.html">Photographer Portfolio Space</a></li>
+                            <li><a href="portfolio-single-1.html">Portfolio Single 01</a></li>
+                            <li><a href="portfolio-single-2.html">Portfolio Single 02</a></li>
+                            <li><a href="portfolio-single-3.html">Portfolio Single 03</a></li>
+                            <li><a href="portfolio-single-4.html">Portfolio Single 04</a></li>
+                            <li><a href="portfolio-single-5.html">Portfolio Single 05</a></li>
                         </ul>
                     </li>
                     <li class="submenu">
                         <a href="#">blog</a>
                         <ul>
-                            <li><a href="/blog">Blog Landing</a></li>
-                            <li><a href="/blog-single">Single Blog</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
+                            <li><a href="blog-right-sidebar.html">Blog right sidebar</a></li>
+                            <li><a href="blog-masonry.html">Blog Masonry</a></li>
+                            <li><a href="blog-masonry2.html">Blog Masonry 02</a></li>
+                            <li><a href="blog-listing.html">Blog Listing</a></li>
+                            <li><a href="blog-single.html">Blog Single</a></li>
+                            <li><a href="blog-single-2.html">Blog Single 02</a></li>
+                            <li><a href="blog-single-3.html">Blog Single 03</a></li>
+                            <li><a href="blog-single-left-sidebar.html">Blog Single Left Sidebar</a></li>
+                            <li><a href="blog-single-right-sidebar.html">Blog Single Right Sidebar</a></li>
                         </ul>
                     </li>
                     <li class="submenu">
-                        <a href="#">Photographer</a>
+                        <a href="#">Contact</a>
                         <ul>
-                            <li><a href="/photography">Photography</a></li>
-                            <li><a href="/photographer_portfolio">Single photographer</a></li>
+                            <li><a href="creative-contact.html">Creative Contact</a></li>
+                            <li><a href="classic-contact.html">Classic Contact</a></li>
+                            <li><a href="classic-contact2.html">Classic Contact 02</a></li>
+                            <li><a href="classic-contact3.html">Classic Contact 03</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="/contact">Contact</a>
-                    </li>
-                    <li><a href="/404">404</a></li>
+                    <li><a href="404.html">404</a></li>
                 </ul>
             </div>
             <div class="curency language">
@@ -81,26 +112,60 @@
                 <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
             </ul>
             <div class="copy_right_menu">
-                <p>© <a href="#">Writers</a> 2020. All Rights Reserved</p>
+                <p>© <a href="#">Writers</a> 2020. All Rights Reserved. </p>
             </div>
         </div>
         <!--================End Offcanvas Menu Area =================-->
+       
         <!--================Header Area =================-->
-        <header class="main_header_area m_f_menu h_pad">
-            <div class="pull-left">
-                <i class="lnr lnr-menu bar_menu"></i>
-                <a href="#">
-                    <img class="logo-image" src="img/logo.png" alt="">
-                    <span class="logo-text">
-                        Free Writers
-                    </span>
-                </a>
-                <a class="h_contact_bar" href="#"><i class="ti-mobile"></i><span>Call us :</span> +(976) 9554-1132</a>
-            </div>
-            <div class="pull-right">
-                <i class="ti-search nav_searchFrom"></i>
-                <a class="quote_btn" href="#">request a quote</a>
-            </div>
+        <header class="main_header_area business_menu transparent_menu h_pad">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" style="width: 60px"></a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="/" class="dropdown-toggle">Home</a>
+                        </li>
+                        <li><a href="/about-us">About Us</a></li>
+                        <li class="dropdown">
+                            <a href="/portfolio" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                            <ul class="dropdown-menu sub-menu">
+                                <li><a href="/portfolio-single">Single</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="/blog" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+                            <ul class="dropdown-menu sub-menu">
+                                <li><a href="/blog-single">Single Blog</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="/photography" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Phorography</a>
+                            <ul class="dropdown-menu sub-menu">
+                                <li><a href="/photographer_portfolio">Photographer portfolio</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="/photography" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Meet the team</a>
+                            <ul class="dropdown-menu sub-menu">
+                                <li><a href="/photographer_portfolio">Single Team Member</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/about-us">Contact Us</a></li>
+                        <li><a href="404.html">404</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="shop_cart"><a href="#"><i class="ti-bag"></i></a></li>
+                        <li class="nav_searchFrom"><a href="#"><i class="ti-search"></i></a></li>
+                        <li><a href="#"><i class="lnr lnr-menu bar_menu"></i></a></li>
+                    </ul>
+                </div><!-- /.container-fluid -->
+            </nav>
         </header>
         <!--================End Header Area =================-->
 </div>

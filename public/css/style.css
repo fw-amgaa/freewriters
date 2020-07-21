@@ -11611,3 +11611,7 @@ path {
   font-size: 14px;
   margin-left: 30px;
 }
+
+.main_header_area.business_menu.transparent_menu .navbar-default .nav.navbar-nav > li > a {
+  color: black;
+}
