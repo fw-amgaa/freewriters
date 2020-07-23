@@ -2,6 +2,13 @@
 
 use Illuminate\Support\Str;
 
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+$host = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$database = substr($url["path"], 1);
+
 return [
 
     /*
@@ -44,24 +51,12 @@ return [
         ],
 
         'mysql' => [
-            'read' => [
-                'host' => [
-                    '192.168.1.1',
-                    '196.168.1.2',
-                ],
-            ],
-            'write' => [
-                'host' => [
-                    '196.168.1.3',
-                ],
-            ],
-            'sticky' => true,
             'driver' => 'mysql',
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => $host,
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'laravel'),
-            'username' => env('DB_USERNAME', 'laravel_user'),
-            'password' => env('DB_PASSWORD', 'Maximusprime09!'),
+            'database' => $database,
+            'username' => $username,
+            'password' => $password,
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
