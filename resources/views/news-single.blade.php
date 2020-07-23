@@ -42,22 +42,31 @@
             <div class="container">
                 <div class="single_blog_title">
                     <a href="#"><h6 class="blog_category">Brading Design</h6></a>
-                    <h2>{{ $blog->title }}</h2>
-                    <a href="#"><h5 class="blog_date"> Posted On: {{ $blog->created_at }}</h5></a>
+                    <h2>{{ $new->title }}</h2>
+                    <a href="#"><h5 class="blog_date"> Posted On: {{ $new->created_at }}</h5></a>
                 </div>
                 <div class="single_blog_img_content">
                     <div class="blog_image_slider owl-carousel">
                         <div class="item">
-                            <img src="{{ Voyager::image($blog->image) }}" alt="">
+                            <img src="img/blog/single-blog/single-blog-1.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/blog/single-blog/single-blog-1.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/blog/single-blog/single-blog-1.jpg" alt="">
                         </div>
                     </div>
                     <div class="single_blog_content">
-                        {!! $blog->body !!}
+                        {!! $new->body !!}
                     </div>
                 </div>
                 <div class="single_blog_category">
                     <div class="pull-left">
-                        <b>Category: </b> <a href="#" style="text-transform: capitalize">{{ $blog->sluger }}</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Branding</a>
+                        <a href="#">Logo</a>
+                        <a href="#">Photography</a>
                     </div>
                     <div class="pull-right">
                         <h4>Share :</h4>
@@ -67,6 +76,30 @@
                             <li><a href="#"><i class="ti-google"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                         </ul>
+                    </div>
+                </div>
+                <div class="single_new_prev_post">
+                    <div class="pull-left">
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="img/blog/prev-post.jpg" alt="">
+                            </div>
+                            <div class="media-body">
+                                <a href="#"><h5>Preview Post</h5></a>
+                                <a href="#"><h4>The era of ‘catastrophic failure’</h4></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pull-right">
+                        <div class="media">
+                            <div class="media-body">
+                                <a href="#"><h5>Next Post</h5></a>
+                                <a href="#"><h4>Giovanna Engelbert's Street-Style</h4></a>
+                            </div>
+                            <div class="media-right">
+                                <img src="img/blog/new-post.jpg" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -80,13 +113,12 @@
                     <h2>You May Also Like...</h2>
                 </div>
                 <div class="row">
-                    @foreach($blogs as $blog)
                     <div class="col-md-4">
                         <div class="n_blog_item">
                             <div class="blog_image">
-                                <img src="{{ Voyager::image($blog->image) }}" alt="">
+                                <img src="img/blog/news-blog/n-blog-4.jpg" alt="">
                                 <div class="blog_hover">
-                                    <a class="image_pop"  href="{{ Voyager::image($blog->image) }}"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                    <a class="image_pop"  href="img/blog/news-blog/n-blog-4.jpg"><i class="fa fa-plus" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
                                 </div>
                                 <div class="blog_p_icon">
@@ -94,14 +126,54 @@
                                 </div>
                             </div>
                             <div class="n_blog_text">
-                                <a href="#"><h5>{{ $blog->created_at }}</h5></a>
-                                <a href="#"><h3>{{ $blog->title }}</h3></a>
-                                <p>{{ $blog->excerpt }}</p>
-                                <a class="blog_r_btn" href="#" style="text-align: center !important">Read More</a>
+                                <a href="#"><h5>December 14, 2019</h5></a>
+                                <a href="#"><h3>Cannibal film 'not meant to make you sick'</h3></a>
+                                <p>It is a long established fact that a reader will be distracted by the  when at its layout letters.</p>
+                                <a class="blog_r_btn" href="#">Read More</a>
                             </div>
                         </div>
                     </div>
-                    @endforeach
+                    <div class="col-md-4">
+                        <div class="n_blog_item">
+                            <div class="blog_image_slider owl-carousel">
+                                <div class="item">
+                                    <img src="img/blog/news-blog/n-blog-5.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="img/blog/news-blog/n-blog-1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="img/blog/news-blog/n-blog-11.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="n_blog_text">
+                                <a href="#"><h5>December 14, 2019</h5></a>
+                                <a href="#"><h3>Where 10 Tube stops get their names</h3></a>
+                                <p>It is a long established fact that a reader will be distracted by the  when at its layout letters.</p>
+                                <a class="blog_r_btn" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="n_blog_item">
+                            <div class="blog_image">
+                                <img src="img/blog/news-blog/n-blog-6.jpg" alt="">
+                                <div class="blog_hover">
+                                    <a class="image_pop"  href="img/blog/news-blog/n-blog-6.jpg"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="blog_p_icon">
+                                    <i class="fa fa-picture-o"></i>
+                                </div>
+                            </div>
+                            <div class="n_blog_text">
+                                <a href="#"><h5>December 14, 2019</h5></a>
+                                <a href="#"><h3>The women who sleep with a stranger to save their marriage</h3></a>
+                                <p>It is a long established fact that a reader will be distracted by the  when at its layout letters.</p>
+                                <a class="blog_r_btn" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

@@ -139,10 +139,12 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="/blog" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-                            <ul class="dropdown-menu sub-menu">
-                                <li><a href="/blog-single">Single Blog</a></li>
-                            </ul>
+                            <a href="/blogs" class="dropdown-toggle">Blogs</a>
+                                <ul class="dropdown-menu sub-menu">
+                                    @foreach($blogs as $blog)
+                                        <li><a href="/blogs/{{ $blog->slug }}">{{ $blog->title }}</a></li>
+                                    @endforeach
+                                </ul>
                         </li>
                         <li class="dropdown">
                             <a href="/photography" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Phorography</a>

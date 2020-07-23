@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use TCG\Voyager\Models\Post;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,13 +22,25 @@ Route::get('/about-us', function () {
     return view('about-us');
 });
 
-Route::get('/blog-single', function () {
-    return view('blog-single');
+Route::get('/blogs', function() {
+    $blogs = Post::join('categories', 'categories.id', '=', 'posts.category_id')->get();
+    return view('blogs', compact('blogs'));
 });
 
-Route::get('/blog', function () {
-    return view('blog');
-});
+Route::get('/blogs/{slug}', function ($slug) {
+    $blog = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('slug', '=', $slug)->firstOrFail();
+    return view('blog-single', compact('blog'));
+})->name('blogSingle');
+
+// Route::get('/news', function() {
+//     $news = Post::join('categories', 'categories.id', '=', 'posts.category_id')->where('categories.name', 'News')->get();
+//     return view('news', compact('news'));
+// })->name('newsSingle');
+
+// Route::get('/news/{slug}', function ($slug) {
+//     $new = Post::where('slug', '=', $slug)->firstOrFail();
+//     return view('news-single', compact('new'));
+// }); 
 
 Route::get('/contact', function () {
     return view('contact');
@@ -56,10 +69,6 @@ Route::get('/404', function () {
 Route::get('/community', function () {
     return view('community');
 });
-
-
-
-
 
 
 Route::group(['prefix' => 'admin'], function () {
