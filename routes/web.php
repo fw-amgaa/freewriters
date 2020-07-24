@@ -16,7 +16,6 @@ use TCG\Voyager\Models\Post;
 
 Route::get('/', function () {
     return view('home');
-    return User::all();
 });
 
 Route::get('/about-us', function () {
